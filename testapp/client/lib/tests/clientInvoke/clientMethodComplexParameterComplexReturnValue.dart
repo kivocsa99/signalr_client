@@ -1,9 +1,10 @@
 import 'dart:async';
 
-import 'package:client/tests/test.dart';
-import 'package:client/views/pages/testsPageViewModel.dart';
 import 'package:logging/logging.dart';
-import 'package:signalr_netcore/signalr_client.dart';
+import 'package:signalr_netcore2/signalr_client.dart';
+
+import '../../views/pages/testsPageViewModel.dart';
+import '../test.dart';
 
 class ClientMethodComplexParameterComplexReturnValue extends Test {
   // Properties
@@ -22,14 +23,15 @@ class ClientMethodComplexParameterComplexReturnValue extends Test {
         "MethodWithComplexParameterAndComplexReturnValue",
         args: <Object>[reqParam]);
     //args: <Object>[reqParam.toJson()]); //Convert object to map for msgpack
-    var resultObj = ComplexReturnValue.fromJson(jsonResult);
+    var resultObj =
+        ComplexReturnValue.fromJson(jsonResult as Map<String, dynamic>);
     logger.info("Result: '$resultObj");
   }
 }
 
 class ComplexInParameter {
-  String firstName;
-  String lastName;
+  String? firstName;
+  String? lastName;
 
   ComplexInParameter({
     this.firstName,
@@ -43,9 +45,9 @@ class ComplexInParameter {
 }
 
 class ComplexReturnValue {
-  String firstName;
-  String lastName;
-  String greetingText;
+  String? firstName;
+  String? lastName;
+  String? greetingText;
 
   ComplexReturnValue({this.firstName, this.lastName, this.greetingText});
 

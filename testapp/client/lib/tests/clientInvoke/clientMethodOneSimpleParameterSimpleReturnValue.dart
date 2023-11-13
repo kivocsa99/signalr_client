@@ -1,7 +1,8 @@
-import 'package:client/tests/test.dart';
-import 'package:client/views/pages/testsPageViewModel.dart';
 import 'package:logging/logging.dart';
-import 'package:signalr_netcore/signalr_client.dart';
+import 'package:signalr_netcore2/signalr_client.dart';
+
+import '../../views/pages/testsPageViewModel.dart';
+import '../test.dart';
 
 class ClientMethodOneSimpleParameterSimpleReturnValue extends Test {
   // Properties

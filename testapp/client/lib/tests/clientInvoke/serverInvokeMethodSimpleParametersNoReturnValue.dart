@@ -1,7 +1,8 @@
-import 'package:client/tests/test.dart';
-import 'package:client/views/pages/testsPageViewModel.dart';
 import 'package:logging/logging.dart';
-import 'package:signalr_netcore/signalr_client.dart';
+import 'package:signalr_netcore2/signalr_client.dart';
+
+import '../../views/pages/testsPageViewModel.dart';
+import '../test.dart';
 
 class ServerInvokeMethodSimpleParametersNoReturnValue extends Test {
   // Properties
@@ -26,9 +27,9 @@ class ServerInvokeMethodSimpleParametersNoReturnValue extends Test {
   }
 
   void _handleServerInvokeMethodSimpleParametersNoReturnValue(
-      List<Object> parameters) {
+      List<Object?>? parameters) {
     final paramValues = new StringBuffer("Parameters: ");
-    for (int i = 0; i < parameters.length; i++) {
+    for (int i = 0; i < parameters!.length; i++) {
       final value = parameters[i];
       paramValues.write("$i => $value, ");
     }
