@@ -1,3 +1,7 @@
+## [1.3.8]
+
+- Update dependencies for sse_channel3 that has updated dependecies for uuid plugin
+
 ## [1.3.7]
 
 - Update dependencies
