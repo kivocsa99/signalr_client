@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:http/http.dart';
-import 'package:signalr_netcore2/ihub_protocol.dart';
+import 'package:signalr_netcore3/ihub_protocol.dart';
 import 'errors.dart';
 import 'signalr_http_client.dart';
 import 'utils.dart';

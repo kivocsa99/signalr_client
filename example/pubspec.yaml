@@ -16,7 +16,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  signalr_netcore2:
+  signalr_netcore3:
     path: ../
 
   logging: ^1.2.0

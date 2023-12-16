@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'dart:io';
 import 'package:http/http.dart';
-import 'package:signalr_netcore2/signalr_client.dart';
+import 'package:signalr_netcore3/signalr_client.dart';
 
 import 'main.dart';
 import 'utils/viewModel/viewModel.dart';

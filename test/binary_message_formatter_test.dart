@@ -1,6 +1,6 @@
 import 'dart:typed_data';
 
-import 'package:signalr_netcore2/binary_message_format.dart';
+import 'package:signalr_netcore3/binary_message_format.dart';
 import 'package:test/test.dart';
 import 'package:collection/collection.dart';
 

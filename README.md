@@ -49,7 +49,7 @@ Let's demo some basic usages:
 
 ```dart
 // Import the library.
-import 'package:signalr_netcore2/signalr_client.dart';
+import 'package:signalr_netcore3/signalr_client.dart';
 
 // The location of the SignalR Server.
 final serverUrl = "192.168.10.50:51001";
@@ -65,7 +65,7 @@ Logging is supported via the dart [logging package](https://pub.dartlang.org/pac
 ```dart
 // Import theses libraries.
 import 'package:logging/logging.dart';
-import 'package:signalr_netcore2/signalr_client.dart';
+import 'package:signalr_netcore3/signalr_client.dart';
 
 // Configer the logging
 Logger.root.level = Level.ALL;
@@ -160,7 +160,7 @@ The Hub should be configured to use the msgpack protocol in both the client and 
 ### Client
 
 ```dart
-import 'package:signalr_netcore2/msgpack_hub_protocol.dart';
+import 'package:signalr_netcore3/msgpack_hub_protocol.dart';
 _hubConnection = HubConnectionBuilder()
           .withUrl(_serverUrl, options: httpOptions)
           /* Configure the Hub with msgpack protocol */

@@ -1,7 +1,7 @@
 import 'dart:typed_data';
-import 'package:signalr_netcore2/errors.dart';
-import 'package:signalr_netcore2/ihub_protocol.dart';
-import 'package:signalr_netcore2/msgpack_hub_protocol.dart';
+import 'package:signalr_netcore3/errors.dart';
+import 'package:signalr_netcore3/ihub_protocol.dart';
+import 'package:signalr_netcore3/msgpack_hub_protocol.dart';
 import 'package:test/test.dart';
 import 'package:collection/collection.dart';
 import 'package:logging/logging.dart';

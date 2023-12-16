@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:logging/logging.dart';
-import 'package:signalr_netcore2/signalr_client.dart';
+import 'package:signalr_netcore3/signalr_client.dart';
 import '../utils/viewModel/viewModel.dart';
 import '../views/pages/testsPageViewModel.dart';
 
