@@ -444,6 +444,7 @@ class HttpConnection implements IConnection {
       final token = await _accessTokenFactory!();
 
       headers.setHeaderValue("Authorization", "$token");
+      headers.setHeaderValue('Upgrade', 'websocket');
     }
 
     final negotiateUrl = _resolveNegotiateUrl(url);
