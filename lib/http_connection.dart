@@ -442,6 +442,7 @@ class HttpConnection implements IConnection {
 
     if (_accessTokenFactory != null) {
       final token = await _accessTokenFactory!();
+
       headers.setHeaderValue("Authorization", "$token");
     }
 
